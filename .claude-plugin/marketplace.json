@@ -1,0 +1,10 @@
+{
+  "name": "edgepilot",
+  "owner": {
+    "name": "Rivendell Holdings Investment Limited"
+  },
+  "metadata": {
+    "description": "Official EdgePilot Live and Research plugins."
+  },
+  "plugins": []
+}
