@@ -6,5 +6,14 @@
   "metadata": {
     "description": "Official EdgePilot Live and Research plugins."
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "edgepilot",
+      "source": "./plugins/claude/edgepilot"
+    },
+    {
+      "name": "edgepilot-research",
+      "source": "./plugins/claude/edgepilot-research"
+    }
+  ]
 }
