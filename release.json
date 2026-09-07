@@ -7,19 +7,19 @@
       "product": "live",
       "version": "1.2.9",
       "name": "edgepilot",
-      "archive_sha256": "sha256:690591276037bd9ebac23365647338109ea1bb773660bfce334f265d7f1dd746",
-      "source_content_digest": "sha256:58b46de19e63e0af68384152f13bc9096fd387f2a3dfd099b9ef70eae16183a5",
-      "codex_content_digest": "sha256:ce7ebcd10409f6ed24492057a7aaebb813c122f25b2158d45011b6f5eaf7f32b",
-      "claude_content_digest": "sha256:500a09d15d40bd312caf467385eee1d05f712d1b595dbcdbdbdc632c86c2d01e"
+      "archive_sha256": "sha256:0f3c9cafd49b467a3c3997dddd24e084323345128caa338a6b8f9c28989eec68",
+      "source_content_digest": "sha256:ee9cc0858be8b4643b3ccd4a9218985a8c10667fba90c34d5ff292a37ac8f2bb",
+      "codex_content_digest": "sha256:c7f88a8c2e88af02398e749a7bc76cd6b748541e622643cf428a31d859ac3118",
+      "claude_content_digest": "sha256:4db1b44cad6258b36672f4164eee6b3c4a835d74986d88835e9e3757fb48cf71"
     },
     {
       "product": "research",
       "version": "1.2.9",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:352591ab03f75445aade4fa37b5dffda951c84804f1a0d67a610c2a26f151a3a",
-      "source_content_digest": "sha256:4fd9e13e1c7767249964bce345fbe79a5fdbc193236d6ba3f9eaa52c01bc381a",
-      "codex_content_digest": "sha256:535140bccfd1c1be98697dcd0bed379853f3c51096b5d4b3a026a66d824c6af1",
-      "claude_content_digest": "sha256:9848b0a8a7d1c114b60118bcee596755265b83203c5a84441aba32b082408f9c"
+      "archive_sha256": "sha256:67af000dadda3c59c4c2ebe5dc4f5eaf1701b03af062518e2ba5ab177f09a36d",
+      "source_content_digest": "sha256:cdda35bb7e164ff2db111480e7ddd2122ea85766627806feb3b047fca71381de",
+      "codex_content_digest": "sha256:a9704b222f79ec82b75a017fb75a91e93c176ca82c556e41650b12669efa5ad1",
+      "claude_content_digest": "sha256:272beee1deef6b1e432f11326211e066ada2ae8ae1738c0db55fc5c7590d6574"
     }
   ],
   "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"

@@ -7,7 +7,7 @@ This branch is `feat/refactoring`. Marketplace ID: `edgepilot`.
 ## Codex
 
 ```bash
-codex plugin marketplace add Rivendell-investment/dgepilot-marketplace --ref feat/refactoring
+codex plugin marketplace add Rivendell-investment/edgepilot-marketplace --ref feat/refactoring
 codex plugin add edgepilot@edgepilot
 codex plugin add edgepilot-research@edgepilot
 ```
@@ -15,7 +15,7 @@ codex plugin add edgepilot-research@edgepilot
 ## Claude Code
 
 ```bash
-claude plugin marketplace add Rivendell-investment/dgepilot-marketplace@feat/refactoring
+claude plugin marketplace add Rivendell-investment/edgepilot-marketplace@feat/refactoring
 claude plugin install edgepilot@edgepilot
 claude plugin install edgepilot-research@edgepilot
 ```
