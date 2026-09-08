@@ -1,0 +1,26 @@
+{
+  "schema": "edgepilot-marketplace-release-v1",
+  "marketplace": "edgepilot",
+  "branch": "main",
+  "products": [
+    {
+      "product": "live",
+      "version": "1.2.11",
+      "name": "edgepilot",
+      "archive_sha256": "sha256:bab14130f64a4605e4864ad89c5bdec8f0b7108e7f451d18b8315a8578685719",
+      "source_content_digest": "sha256:f9d748c3e1388de4cd48d0cc0cd1f2550018f876b550bad70b386a8502c43ec9",
+      "codex_content_digest": "sha256:3d423d42a3a878bfc34fb9b22fcf95afa00381b8bc287fcf0c41e2c33853e8b4",
+      "claude_content_digest": "sha256:99f2d9b2398ffa055824499adf42dd1f5d6be5edb101c7701be825beaffc62a9"
+    },
+    {
+      "product": "research",
+      "version": "1.2.11",
+      "name": "edgepilot-research",
+      "archive_sha256": "sha256:e76e6cdc79a75b4062ce81ea557fd498c345373b63b6e75bbd396c646c89430c",
+      "source_content_digest": "sha256:a3ce44a30a855667f3f232110ac2cbb81451d116b535347ec69d65da040f213f",
+      "codex_content_digest": "sha256:058bd66d0bccd6332e717693d4e7a06cf34f7a73011ea07b916e6cde8b0f2773",
+      "claude_content_digest": "sha256:44ebddd5fce8b96aaff1140405fe7146200167cdbcb798f348bda5890d336fbe"
+    }
+  ],
+  "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"
+}

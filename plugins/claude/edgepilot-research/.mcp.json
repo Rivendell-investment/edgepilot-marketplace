@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "edgepilot-research": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/resolver.mjs",
+        "research"
+      ],
+      "env": {
+        "EDGEPILOT_ENV": "production"
+      }
+    }
+  }
+}
