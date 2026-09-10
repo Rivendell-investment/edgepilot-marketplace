@@ -5,21 +5,21 @@
   "products": [
     {
       "product": "live",
-      "version": "1.2.17",
+      "version": "1.2.18",
       "name": "edgepilot",
-      "archive_sha256": "sha256:12d770cd6df10a9e6127d473869019bbe4fb5c4a2566b415212d939326a576a5",
-      "source_content_digest": "sha256:e475d5bc899a87d8bd34cd1b7e52a926b36ef2609fa1c1add3bfa84182b5401d",
-      "codex_content_digest": "sha256:20f6dc0ae6ae904e2f8fabe08d06cab1c7304b97e4326aaba3cfb82b1d2f8438",
-      "claude_content_digest": "sha256:33e399c67a9bda65630d0f723450c34f070b0db876b115045fe0f1897a05e36c"
+      "archive_sha256": "sha256:af96d2a4f47ac430a7c8561921784ead4f94c9b670004279e8e6581439b6cc20",
+      "source_content_digest": "sha256:f557fe82b970d32fe77978ed83e21e2155648be7008812062f0e5f22f644ad5b",
+      "codex_content_digest": "sha256:e5c3be0009535f1cd1b27e7c4e197a1b747b7f7e95f9177223a69541c735d490",
+      "claude_content_digest": "sha256:b809f949ce042d7a9e108e54f99683cd529aa30c0ce0fdc5d0d9950219d689f8"
     },
     {
       "product": "research",
-      "version": "1.2.17",
+      "version": "1.2.18",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:a70cd2ee4c1dba8b8b80378c34b060bac2a03b30e27de44101694c30eb427f8b",
-      "source_content_digest": "sha256:bcd235498598bde6205f9493f5e74bbb85794cec736c56af1e1e8ea9b70d6e3b",
-      "codex_content_digest": "sha256:08d67bdce0a64f7597b416951dd7ef90cd9d54c719ca66421a4376c2059a20ed",
-      "claude_content_digest": "sha256:c6fad2fffbbd578ebe6e3849be8a6f4cb0cc6ece0d26135c639dcd2057c7cf38"
+      "archive_sha256": "sha256:d4e66b368de49a96c9689d65547d4956174040d8575657d952300f47c725257a",
+      "source_content_digest": "sha256:4a5bd03049c140fd002562c8eba07622ace1b19e0b7e806ff29126cc45370157",
+      "codex_content_digest": "sha256:7eb78ccf8a800783395cbd80c18e88100d3f5e6c356835672c5a0c4f1d39a5be",
+      "claude_content_digest": "sha256:dbd76facd6c4bf3a2b0d0aba0bdfabf4350e23727ed3f4c61ae7c8b7f156fca9"
     }
   ],
   "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"
