@@ -5,21 +5,21 @@
   "products": [
     {
       "product": "live",
-      "version": "1.3.7",
+      "version": "1.3.8",
       "name": "edgepilot",
-      "archive_sha256": "sha256:214f389ec184117c1e8ec610eafac724f356c020d5d15b29552f81ce712e254d",
-      "source_content_digest": "sha256:59d753b1ff0ebb1ca74c8bbebfbe7084392b0b3071e027488c2d6964ac4ad8cf",
-      "codex_content_digest": "sha256:b6e828f3a01692377626b15b88c61bc5342f7fdc4907f38c0019a77175efc8fb",
-      "claude_content_digest": "sha256:8cdca4cd72105c37419e62b23ac252afcd879881b75065095db3347b8a89516e"
+      "archive_sha256": "sha256:756d5c1b910131127bc92dbc225b6c5d8976c2ba339b645242ff0da96bbeab51",
+      "source_content_digest": "sha256:b8822f54f886a874fe24b43b2197b1def2a20f401cf96d8a3a3ac57a65d3f627",
+      "codex_content_digest": "sha256:867df0942541bb2d80eddfbffac57d21a166e60b98b6c454a307a3abc034c6ce",
+      "claude_content_digest": "sha256:69c67eae02511714d52faa01b5c9d7e36d1d5060067cafb92281bb4e76ab331d"
     },
     {
       "product": "research",
-      "version": "1.3.7",
+      "version": "1.3.8",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:053e399c539ec510d5c1b86d0afafdb85e8273a5deffafbe10742b043046df6c",
-      "source_content_digest": "sha256:8088b6c58c2bffd93f0f0f0c15d8bfe1a20c72ccf736cdc1dd73b130794bf9bf",
-      "codex_content_digest": "sha256:110d45fd42976fdedf8a4179f8a3090a4781bc28213a884f4831585a0370c20f",
-      "claude_content_digest": "sha256:55df09e26fd3c6bce3fd624dd768b1ca32bd6d98bb7422bcb456dad4094aadb1"
+      "archive_sha256": "sha256:802065055073453211a103fb14af4cfac66e48775d9c3e9630e7ca9df89891c3",
+      "source_content_digest": "sha256:aefdff995dd49197242be3d00838dc095ddda7929859148ffe08be6a988b3033",
+      "codex_content_digest": "sha256:ba78eda9d70b7bebed906595f595464b1e652bbccf7074cfe4d9e999548117d5",
+      "claude_content_digest": "sha256:27c879becbed9c5ef2d914e40e538609ebbe64f54154ca77ad2e1336c41260ea"
     }
   ],
   "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"
