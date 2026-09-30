@@ -3,5 +3,30 @@
   "interface": {
     "displayName": "EdgePilot"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "edgepilot",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex/edgepilot"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "edgepilot-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex/edgepilot-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & Analytics"
+    }
+  ]
 }
