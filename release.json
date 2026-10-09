@@ -5,21 +5,21 @@
   "products": [
     {
       "product": "live",
-      "version": "1.3.8",
+      "version": "1.3.14",
       "name": "edgepilot",
-      "archive_sha256": "sha256:756d5c1b910131127bc92dbc225b6c5d8976c2ba339b645242ff0da96bbeab51",
-      "source_content_digest": "sha256:b8822f54f886a874fe24b43b2197b1def2a20f401cf96d8a3a3ac57a65d3f627",
-      "codex_content_digest": "sha256:867df0942541bb2d80eddfbffac57d21a166e60b98b6c454a307a3abc034c6ce",
-      "claude_content_digest": "sha256:69c67eae02511714d52faa01b5c9d7e36d1d5060067cafb92281bb4e76ab331d"
+      "archive_sha256": "sha256:5b3543fcf01da7e550da3f6e731a6917ce1f355786412a9bb55bdfd4c889b747",
+      "source_content_digest": "sha256:6f05b77457bdf88dbec7aaee573a45726da49d38f8d4b40ad5bcf01bad855b8d",
+      "codex_content_digest": "sha256:5b43b74fe4af81c37f6199fa048d4f5d3d37f3d363059cf36688c2f1fa24c567",
+      "claude_content_digest": "sha256:5597fa91fb74775360e25cfd72755c7a2326815ee327b47045474b7861c8d007"
     },
     {
       "product": "research",
-      "version": "1.3.8",
+      "version": "1.3.14",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:802065055073453211a103fb14af4cfac66e48775d9c3e9630e7ca9df89891c3",
-      "source_content_digest": "sha256:aefdff995dd49197242be3d00838dc095ddda7929859148ffe08be6a988b3033",
-      "codex_content_digest": "sha256:ba78eda9d70b7bebed906595f595464b1e652bbccf7074cfe4d9e999548117d5",
-      "claude_content_digest": "sha256:27c879becbed9c5ef2d914e40e538609ebbe64f54154ca77ad2e1336c41260ea"
+      "archive_sha256": "sha256:bc1a7566bd38e0dbf5170481e7311076a45afc719685a2c82e92b5ce64706fca",
+      "source_content_digest": "sha256:84b55300a47f3ddc3fb40cbe05753d500f02b687dea48ad615f464c879deac4d",
+      "codex_content_digest": "sha256:d8f11d6e89b2680969a26a3a5b1628e22b9ae8fdf610f01960c6ff41fa198b5a",
+      "claude_content_digest": "sha256:b4b3b50c1502405aef1c7b6634b5a80837d7800d93311288b9b3ec1c392b8a0e"
     }
   ],
   "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"
