@@ -5,23 +5,23 @@
   "products": [
     {
       "product": "live",
-      "version": "1.3.15",
+      "version": "1.3.16",
       "name": "edgepilot",
-      "archive_sha256": "sha256:158384ad1755156d975f86c5cae8d15f322079450b3d569988987e423be41847",
-      "source_content_digest": "sha256:0a3caaee72c943e70316294acc1f18c3f7a50c435fb374532a0843f51328a241",
-      "codex_content_digest": "sha256:759cd77a9fc8492137e4470e427897cc483876112bd01971dda9d0e0f086e819",
-      "claude_content_digest": "sha256:8b67433d11aaed440f76f82395b6c7522490d323a091cc00bcaac162492b13c2",
-      "cursor_content_digest": "sha256:430c6d76fa4dd9669e181b380e87b9ba4566a9f6392c109f260f2ef88e3f2601"
+      "archive_sha256": "sha256:1682cb8474c27133081881b4b41a2430519ba5906581f66666a9f3ebd4eaf549",
+      "source_content_digest": "sha256:90708fe6bb356516b637fac33ef031254e6d03355f5b6dca7103a0b4c82fea68",
+      "codex_content_digest": "sha256:615b3b7013e450d08f516a6eb8ac5b77840f426af7205b06f599026e1d0e3fe2",
+      "claude_content_digest": "sha256:0f9a14f76862aa05c817dab05d85e6b540ffaa97a7308af08e60c44b07b62759",
+      "cursor_content_digest": "sha256:cedd9cf4fd604e815df932d7b9a6713b0e11efa3d505a02d7a155df4b109a31e"
     },
     {
       "product": "research",
-      "version": "1.3.15",
+      "version": "1.3.16",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:1cc30ea5974031628b83cc7846f651dc895833f91f8f5228c679b1930d1a7790",
-      "source_content_digest": "sha256:e35f525e4d3104b1da9d8629fdf23b6ff5d90146eff43a9ad61d09c0a6d84351",
-      "codex_content_digest": "sha256:33cb39876c0d5e21ee133787d5008c00b756da624746f9f8050e19f895799ce5",
-      "claude_content_digest": "sha256:335327a3a6073b58c62a0f49e0c55eef45d1fe30ad5281d5f1873810e45b7e41",
-      "cursor_content_digest": "sha256:81900e58706f8711a60a55eaa27b2cc409197b1aaf0ae3917ee59450681415d9"
+      "archive_sha256": "sha256:d00b821bd79bb456e74df949106b5af5b7be95026e2a756e389371d6ab937fe8",
+      "source_content_digest": "sha256:5a29b5861333bdd26760d99dac000d3903adbe0d33177f258e72f6a5dee49587",
+      "codex_content_digest": "sha256:441b14b54d1fdfaa75a0f8d8266dacca023841c807d7cb743976ff1f0eecba90",
+      "claude_content_digest": "sha256:0f7f857659e075b5989c060f8586678ceac017384dcef7472144d30afaf29a96",
+      "cursor_content_digest": "sha256:3465c423cce6ed964f4324e045d14c24b598433826b903c12f7de54b656afd90"
     }
   ],
   "claude_adapter": "package-root MCP path; no Codex-specific MCP fields",
