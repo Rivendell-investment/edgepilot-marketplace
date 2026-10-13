@@ -1,6 +1,6 @@
 {
   "name": "edgepilot-research",
-  "version": "1.3.16",
+  "version": "1.3.17",
   "description": "Lightweight router for the local EdgePilot Research Runtime Host.",
   "author": {
     "name": "Rivendell Holdings Investment Limited"
