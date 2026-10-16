@@ -7,13 +7,14 @@ description: Route anonymous public strategy discovery and reproducible historic
 
 The Node Ready Bridge always exposes `edgepilot_runtime_status`,
 `edgepilot_runtime_start`, `edgepilot_runtime_update` and `edgepilot_runtime_repair`, even
-before Runtime exists. The bridge automatically prepares the release-bound Runtime before first business use; never treat an older compatible Runtime as ready. When Runtime is ready, use the five Host meta tools:
+before Runtime exists. The bridge automatically prepares the release-bound Runtime before first business use; never treat an older compatible Runtime as ready. When Runtime is ready, use the six Host meta tools:
 
 1. `edgepilot_connection_list`
 2. `edgepilot_tool_search`
 3. `edgepilot_tool_get`
 4. `edgepilot_tool_execute`
 5. `edgepilot_result_present`
+6. `edgepilot_view_present` (in-chat cards, below)
 
 Search for an operation, fetch its exact current descriptor, then execute with the returned
 `schema_revision`. Do not invent dynamic tools, copy operation schemas into this plugin or
@@ -30,6 +31,16 @@ The normal research route is catalog search/recommend, exact inspect/version lis
 configuration resolve, backtest start, durable job status and result get. Runtime workflow
 hints are navigation, not execution authority. Never repeat a start call merely because a
 job is still queued or running.
+
+## In-chat cards
+
+`edgepilot_view_present` shows one EdgePilot card in the conversation; the Runtime keeps its
+state, so it survives reloads and updates itself. Its text result is what you tell the user,
+briefly. Research cards: `backtest` with `{job_ref}` right after `backtest.run.start` (it follows
+the job to the result) or `{run_ref}` for a saved run; `task` with `{}` for this conversation's
+progress; `leaderboard` with `{sort, query?, locale}`; `installed` with `{locale}`; `glossary`
+with `{metrics, locale}` to explain metric names. Configuration, monitor and diagnosis cards
+exist only in EdgePilot Live.
 
 Route every ordinary chat request for finding or recommending strategies through
 `edgepilot_strategy_search`, including identity/keyword lookup, explicit hard filters,
@@ -62,7 +73,8 @@ opened, `[在 EdgePilot 中查看 <strategy name> <version>](<url>)`.
 
 ## First-use onboarding
 
-Run this flow only when the user selects an interactive-onboarding starter prompt or
+Run this flow only when the `edgepilot-research-setup` skill runs (plugin setup after
+installation), when the user selects an interactive-onboarding starter prompt or
 explicitly asks to open/start the questionnaire or onboarding. A plain request to find or
 recommend a strategy is not onboarding. Reply in the user's current language (`en`, `ko`, `zh-CN` or `zh-TW`).
 Ordinary catalog, Dashboard, data or backtest requests go directly to that outcome and do
@@ -74,11 +86,20 @@ not force the questionnaire.
    historical lifecycle phases and do not assemble alternative shell recovery commands.
    Wait for the original call's final result; yielded/running is not completed. If the
    script reports `runtime_operation_pending`, wait on that call or query status with
-   bounded backoff, without parallel open calls or duplicate installations.
+   bounded backoff, without parallel open calls or duplicate installations. Status text
+   includes the current state, required action, phase, download progress, last error and recent log lines.
+   When `state=update_required`, call `edgepilot_runtime_start`; that start upgrades to the
+   plugin-bound release. `previous_lifecycle`, including an earlier `host_start_timeout`, belongs
+   to the previous release. Do not diagnose or restart that old Host before this start.
    Research switches never pause work: running backtests finish on the previous version
    and the new Host shows their results. Report failures and their script-provided
    recovery action.
    For `stale_session`, reload the plugin session rather than attempting a downgrade.
+   For `host_start_timeout`, tell the user that reloading or restarting Cursor does not
+   restart the Host. The Host is a separate sign-in task. Do not invent a shell command
+   to end it, and do not ask the user to end it in Task Scheduler. Call
+   `edgepilot_runtime_start` again: that start ends a Host task that is still occupying
+   the slot, then starts the current Runtime. If the same timeout returns, report it.
 2. For this Dashboard-and-onboarding request, all successful paths (already running,
    stopped target started, first installation, upgrade or repair) continue identically.
    Only after `state=ready` and `connection_ready=true`, call
@@ -87,6 +108,10 @@ not force the questionnaire.
    that interactive card and end the turn. A brief instruction to continue in the card is
    enough; do not repeat questionnaire choices in chat or call another question/selection
    tool. Keep all seven choices, review and recommendation inside that one App.
+   EdgePilot keeps the questionnaire and its recommendation, and the card passes you their
+   state. When the user later refers to a recommendation by position or role ("the first
+   one", "the safer one"), use exactly the strategy versions that card context names, in the
+   left-to-right order it gives; do not search again or substitute a newer version.
    The tool does not report rendering visibility. Missing model-visible HTML, missing
    acknowledgement or delayed rendering is unknown, not evidence of failure. Never claim
    the card did not appear based on that absence and never automatically start text onboarding
@@ -109,7 +134,7 @@ not force the questionnaire.
 5. After the last answer, use a separate assistant turn to summarize the selected values
    and ask only for explicit confirmation. Do not combine that confirmation request with
    another question and do not call recommendation before confirmation.
-6. Only in this explicitly requested textual onboarding fallback, call the hidden App/fallback
+6. Only in this explicitly requested textual onboarding fallback, call the hidden fallback
    handler `edgepilot_strategy_recommend` once with `questionnaire_version="2.0"`, the seven
    confirmed values and matching locale. Present exactly best fit, relatively steadier and
    more aggressive while preserving versions, evidence, trade-offs and warnings.
@@ -130,6 +155,8 @@ as an internal substitute.
 
 When install, update or startup fails, or Host tools are unavailable, call
 `edgepilot_runtime_diagnose` for read-only, redacted lifecycle and Host log evidence.
+Its text includes the current phase, download progress, last error and recent log lines.
+While installation is still pending, `edgepilot_runtime_status` text has the same progress.
 Explain the failing step and separate the evidence from your inference; do not start,
 update or repair anything unless the user asks.
 

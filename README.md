@@ -20,6 +20,15 @@ claude plugin install edgepilot@edgepilot
 claude plugin install edgepilot-research@edgepilot
 ```
 
+## Cursor
+
+Cursor reads `.cursor-plugin/marketplace.json`. Install only these copies:
+
+- `plugins/cursor/edgepilot`
+- `plugins/cursor/edgepilot-research`
+
+Copy each directory into Cursor's local plugin directory, then reload the window. macOS and Linux: `~/.cursor/plugins/local/<plugin name>`. Windows: `%USERPROFILE%\.cursor\plugins\local\<plugin name>`. Do not install `plugins/codex` or `plugins/claude` into Cursor; their MCP files use another host root. On Teams or Enterprise, import this repository from Dashboard, then Plugins and MCPs. That import reads `.cursor-plugin/marketplace.json`.
+
 Install either product or both. Node.js must be available to the host. Reload plugins or start a new session after installation. Plugin installation does not mean Runtime is running: ask to start EdgePilot, then open its Dashboard. The production Runtime supports macOS arm64, macOS Intel x86_64 and Windows amd64. Live login is Dashboard-only; Research needs no account. After updating an installed plugin, verify its delivery.json contains the channel Runtime ID for your platform. A runtime_identity_incompatible result requires updating the plugin and reloading its session; Runtime repair cannot change plugin bindings.
 
 Branches share one marketplace identity; configure only one branch at a time. Do not enable another marketplace's copy of the same product alongside this one.

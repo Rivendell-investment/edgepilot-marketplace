@@ -5,22 +5,25 @@
   "products": [
     {
       "product": "live",
-      "version": "1.3.13",
+      "version": "0.0.100",
       "name": "edgepilot",
-      "archive_sha256": "sha256:20b04d13ec626ca131a1da1ead287382577c1e3ce9e235f63ef28a7bc323a950",
-      "source_content_digest": "sha256:a9a2b14ba7def91573b6987fbad33709f5ee5e0a8ecdd22adbe13dece67e2506",
-      "codex_content_digest": "sha256:bf55da7af1a8b4211c14add0bc9d3a6ef7e102fb0bbf257708912d0fabbaa2b0",
-      "claude_content_digest": "sha256:f53a5900de897d48ed5918565c92dee49ece9b5b476055d61665bdb96f7f9600"
+      "archive_sha256": "sha256:bfafc9721f6f742a4a611e93e2d580edced6bbacbfb0a1b8aab9adaca1a9189a",
+      "source_content_digest": "sha256:0e45515cb117efdd556497dad47e17300e48f82b16a0b566ee17a70e20f91878",
+      "codex_content_digest": "sha256:0725de4a45b4eb90066fa919879c72da50075a85fd1de2b718bc57d66ed2e7e5",
+      "claude_content_digest": "sha256:1e66746e63a47c72c92a5c8590a9f192af56c03556fa77bfa75bed4097725445",
+      "cursor_content_digest": "sha256:75cfa1f6883a7ba411bbc2f3f39b53d4a8c8ae8bc840f94d493174fe49d5707f"
     },
     {
       "product": "research",
-      "version": "1.3.13",
+      "version": "0.0.100",
       "name": "edgepilot-research",
-      "archive_sha256": "sha256:d9d2426040898e81e5e6ab184d771b09391ab2770f1c3a4df2d71ea4db5fa0c1",
-      "source_content_digest": "sha256:c4c50495a5d5e8956a109900abd925d0ff9a01bdddf460942573d4f7088f549a",
-      "codex_content_digest": "sha256:b96bea3483af2b5fc82c7de53d302ebb4bc8a7d84e96d8daf041426494bb6bdc",
-      "claude_content_digest": "sha256:006a03264b4977e372a3dfaf575197e9ac9675a463ea879894c2a87e81bfb1a9"
+      "archive_sha256": "sha256:7c98b4cef5485adbc6d33a9b757e9516af99ecfdcfea30a26d47b47ba4d67189",
+      "source_content_digest": "sha256:9b384599a37211e798b0d816333e56272050b3817b9f8ff1f8a0bcecc82e5887",
+      "codex_content_digest": "sha256:604d9d931fc8746a8a82779c26f122318bced18bf28e1753f21cbd67b16bf2f5",
+      "claude_content_digest": "sha256:616e5a9379aa7163486b5e450df9bf8e525d1d570f34769419e3dbd1f316ffed",
+      "cursor_content_digest": "sha256:6c2e8bd6e336e5e2e373fb168c96d9f6e79ecd408dacf5496a12679dc84e2bc1"
     }
   ],
-  "claude_adapter": "package-root MCP path; no Codex-specific MCP fields"
+  "claude_adapter": "package-root MCP path; no Codex-specific MCP fields",
+  "cursor_adapter": "mcp.json with ${CURSOR_PLUGIN_ROOT}; manifest .cursor-plugin/plugin.json"
 }

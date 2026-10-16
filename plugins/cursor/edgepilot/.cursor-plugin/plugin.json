@@ -1,0 +1,11 @@
+{
+  "name": "edgepilot",
+  "version": "0.0.100",
+  "description": "Lightweight router for the local EdgePilot Live Runtime Host.",
+  "author": {
+    "name": "Rivendell Holdings Investment Limited"
+  },
+  "logo": "assets/icon.png",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
